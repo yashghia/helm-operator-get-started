@@ -3,7 +3,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: podinfo-dev-new
-  namespace: dev_new
+  namespace: dev-new
   annotations:
     fluxcd.io/automated: "false"
     filter.fluxcd.io/chart-image: glob:dev-*
@@ -11,7 +11,7 @@ spec:
   releaseName: podinfo-dev-new
   chart:
     git: git@github.com:yashghia/helm-operator-get-started
-    path: charts/podinfo_new
+    path: charts/podinfo-new
     ref: master
   values:
     image:
