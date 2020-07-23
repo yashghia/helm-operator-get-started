@@ -12,7 +12,7 @@ spec:
   chart:
     git: git@github.com:yashghia/helm-operator-get-started
     path: charts/podinfo-new
-    ref: master
+    ref: dev
   values:
     image:
       repository: yashghia/podinfo
