@@ -14,16 +14,17 @@ spec:
     path: charts/podinfo-new
     ref: dev
   valuesFrom:
-    - externalSourceRef:
-        url: https://raw.githubusercontent.com/yashghia/helm-operator-get-started/dev/values/devenv_values.yaml
-    - externalSourceRef:
-        url: https://raw.githubusercontent.com/yashghia/helm-operator-get-started/dev/values/devenv_values1.yaml
-
-
-  # valuesFrom:
-  # - chartFileRef:
-  #     path: ../../values/devenv_values.yaml
-
+  - chartFileRef:
+      path: ../../values/devenv_values.yaml
+  - chartFileRef:
+      path: ../../values/devenv_values1.yaml
+  
+  
+      # valuesFrom:
+  #   - externalSourceRef:
+  #       url: https://raw.githubusercontent.com/yashghia/helm-operator-get-started/dev/values/devenv_values.yaml
+  #   - externalSourceRef:
+  #       url: https://raw.githubusercontent.com/yashghia/helm-operator-get-started/dev/values/devenv_values1.yaml
     
   # values:
   #   image:
