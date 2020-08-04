@@ -13,10 +13,15 @@ spec:
     git: git@github.com:yashghia/helm-operator-get-started
     path: charts/podinfo-new
     ref: dev
-  values:
-    image:
-      repository: yashghia/podinfo
-      tag: dev-u1ccpi1q
-    replicaCount: 1
-    hpa:
-      enabled: false
+  valuesFrom:
+  - chartFileRef:
+      path: values/devenv_values.yaml
+
+    
+  # values:
+  #   image:
+  #     repository: yashghia/podinfo
+  #     tag: dev-u1ccpi1q
+  #   replicaCount: 1
+  #   hpa:
+  #     enabled: false
