@@ -15,7 +15,7 @@ spec:
     ref: dev
   valuesFrom:
     - externalSourceRef:
-        url: https://github.com/yashghia/helm-operator-get-started/blob/dev/values/devenv_values.yaml
+        url: https://raw.githubusercontent.com/yashghia/helm-operator-get-started/dev/values/devenv_values.yaml
 
 
   # valuesFrom:
