@@ -15,7 +15,7 @@ spec:
     ref: dev
   valuesFrom:
   - chartFileRef:
-      path: values/devenv_values.yaml
+      path: ../values/devenv_values.yaml
 
     
   # values:
