@@ -14,8 +14,13 @@ spec:
     path: charts/podinfo-new
     ref: dev
   valuesFrom:
-  - chartFileRef:
-      path: ../../values/devenv_values.yaml
+    - externalSourceRef:
+        url: https://github.com/yashghia/helm-operator-get-started/blob/dev/values/devenv_values.yaml
+
+
+  # valuesFrom:
+  # - chartFileRef:
+  #     path: ../../values/devenv_values.yaml
 
     
   # values:
