@@ -1,6 +1,6 @@
 image:
   repository: yashghia/podinfo
-  tag: dev-u1ccpi1q
+  tag: dev-ypmtfkjv
 replicaCount: 1
 hpa:
   enabled: false
